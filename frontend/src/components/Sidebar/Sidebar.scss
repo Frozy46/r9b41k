@@ -1,10 +1,53 @@
 .sidebar {
   width: 250px;
-  height: 100%;
-  background-color: #F6FAFDE5;
+  background-color: #f6fafde5;
   color: white;
   display: flex;
   justify-content: center;
+
+  .nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity 0.3s ease;
+    }
+
+    .inactive {
+      opacity: 1;
+    }
+
+    .active {
+      opacity: 0;
+    }
+
+    &:hover,
+    &.active {
+      background-color: #514ef3;
+
+      .inactive {
+        opacity: 0;
+      }
+
+      .active {
+        opacity: 1;
+      }
+    }
+  }
 
   nav ul {
     list-style: none;

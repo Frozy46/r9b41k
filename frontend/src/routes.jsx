@@ -14,7 +14,6 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Dashboard />} /> {/* Главная страница */}
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="deals" element={<Deals />} />
           <Route path="customers" element={<Customers />} />
@@ -29,3 +28,4 @@ const App = () => {
 };
 
 export default App;
+

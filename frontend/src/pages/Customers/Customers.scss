@@ -1,0 +1,120 @@
+.container-customers {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .info-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .filters {
+      display: flex;
+      gap: 10px;
+
+      button {
+        padding: 8px 12px;
+        background-color: #514ef3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #3a38b3;
+        }
+      }
+
+      select {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .custom-list {
+    background-color: #f6fafd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .custom-list-header {
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: 20px;
+        margin: 0;
+      }
+
+      button {
+        padding: 8px 12px;
+        background-color: #514ef3;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #3a38b3;
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+
+
+        .customer-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+          &:last-child {
+            border-bottom: none;
+          }
+
+          h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+          }
+
+          p {
+            margin: 5px 0;
+            color: #555;
+          }
+        }
+      }
+    }
+
+    .load-more {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #514ef3;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #3a38b3;
+      }
+    }
+  }
+}

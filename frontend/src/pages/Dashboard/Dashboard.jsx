@@ -1,14 +1,11 @@
-import inactiveIcon from "../../assets/dashboard.svg"; // SVG для неактивного состояния
-import activeIcon from "../../assets/dashboard-active.svg"; // SVG для активного состояния
+
 import "./Dashboard.scss";
 
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <button className="dash-btn">
-        <img src={inactiveIcon} alt="Dashboard Icon" className="dash-icon inactive" />
-        <img src={activeIcon} alt="Dashboard Icon" className="dash-icon active" />
-      </button>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel explicabo dolore possimus, dolores iusto nisi et, at repudiandae magnam eveniet cumque aliquam, culpa natus soluta iste voluptatem porro adipisci beatae.</p>
+
     </div>
   );
 };

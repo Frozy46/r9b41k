@@ -5,9 +5,52 @@ html, body {
   height: 100%;
 }
 
-
-
-.container {
+.app {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-  background-color: #f0f0f0;
+}
+
+/* Верхняя часть: логотип и хедер */
+.top-bar {
+  display: flex;
+  align-items: center;
+  background-color: #F6FAFDE5;
+  padding: 10px 20px;
+  border-bottom: 1px solid #444;
+
+  .logo {
+    width: 100px; /* Ширина логотипа */
+    height: 40px; /* Высота логотипа */
+    background-color: #F6FAFDE5; /* Цвет фона логотипа */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px; /* Отступ между логотипом и хедером */
+  }
+}
+
+/* Основной контейнер: сайдбар и контент */
+.container {
+  display: flex;
+  flex: 1;
+}
+
+/* Сайдбар */
+.sidebar {
+  width: 100px; /* Ширина сайдбара */
+  background-color: #F6FAFDE5;
+  border-right: 1px solid #444;
+  color: white;
+  padding: 20px;
+}
+
+/* Контент */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(246, 250, 253, 0.90);
 }
